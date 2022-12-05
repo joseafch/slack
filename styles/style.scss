@@ -209,6 +209,7 @@ list-style-type: none;
     // margin-left: 10px;
 // gap: 10px;
 background-color: $bg_color_purple;
+clip-path: ellipse(75% 100% at center top);
 
 }
 .slack-sededigital__body{
@@ -322,4 +323,95 @@ background-color: $bg_color_purple ;
 header{
     position:fixed;
     width: 100%;
+}
+@media screen and (min-width: $layout_br_desktop){
+   .presentation-pag{
+flex-direction: row;
+// display: grid;
+justify-content: center;
+align-items:center ;
+gap: 20px;
+height: 70vh;
+// text-align: center;
+    }
+
+}
+@media screen and (min-width: $layout_br_desktop){
+.companys-use{
+background-color: #f4ede4;
+margin: 0px;
+padding-top: 20px;
+}
+}
+@media screen and (min-width: $layout_br_desktop){
+    .companys-use__texto{
+        outline:none;
+}
+}
+@media screen and (min-width: $layout_br_desktop){
+.companys-use__logos{
+height: max-content;
+align-items:baseline;
+background-color: #f4ede4;
+}
+}
+@media screen and (min-width: $layout_br_desktop){
+    .slack-concepts{
+        flex-direction: row;
+    //    grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: $layout_br_desktop){
+.slack-concepts__informations{
+    width:50%;
+}
+}
+.slack_imgg{
+    width: 100%;
+}
+@media screen and (min-width: $layout_br_desktop){
+.slack_imgg{
+    width: 40%;
+}
+}
+@media screen and (min-width: $layout_br_desktop){
+    .slack_concep--reverse{
+        flex-direction: row-reverse;
+    }
+}
+@media screen and (min-width: $layout_br_desktop){
+    .slack-estadisticas__number{
+       flex-direction: row;
+    }
+}
+@media screen and (min-width: $layout_br_desktop){
+    .box-estadisticas{
+        align-items: center;
+    }
+}
+@media screen and (min-width: $layout_br_desktop){
+    .box-estadisticas__button{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+}
+@media screen and (min-width: $layout_br_desktop){
+    .box-promotions__img{
+       display: flex;
+       flex-direction: row;
+    }
+}
+@media screen and (min-width: $layout_br_desktop){
+    .box-presentation__pag{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       text-align: center;
+       width: 70%;
+    }
 }
