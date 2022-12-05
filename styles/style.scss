@@ -1,0 +1,325 @@
+@import "./variables/variable";
+@import "./minxin/mixin";
+
+// header{
+//     position: sticky
+// }
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.menu-contenido {
+    @include flexelment(row,space-around,center);
+   background-color: $bg_color_purple;
+}
+.menu-contenido__logo{
+    @include flexelment (row,flex-start,center);
+    padding:10px;
+    gap:20px;
+}
+.photo-menu{
+    width: 50px;
+   
+}
+.presentation-pag{
+    @include flexelment(column,center,center);
+    background-color: $bg_color_purple;
+    height: 100vh;
+}
+.presentation-pag__register{
+    @include flexelment(column,center,center)
+}
+.presentation-pag__register--title{
+    @include flexelment(column,center,center);
+    color: white;
+   text-align: center;
+//    font-size: 2.75rem;
+
+}
+.presentation-pag__register--button{
+    width: 100%;
+    display: block;
+    // height: 68px;
+    margin-top: 30px;
+    color: $bg_color_purple;
+padding: 19px 40px 20px;
+}
+.presentation-pag__spam{
+    color: #ecb22e;
+}
+.presentation-pag__chat-photo{
+    width: 100%;
+    height: 40vh;
+}
+.companys-use{
+    @include flexelment(column,center,center);
+    // margin-top:20px;
+    gap: 20px;
+    margin-top: 20px;
+}
+.companys-use__logos{
+    @include flexelment (row,space-evenly,center);
+    flex-wrap: wrap;
+    height: 50vh;
+    gap: 30px;
+}
+.companys-use__logos--img{
+max-width: 100%;
+height: auto;
+
+}
+.companys-use__texto{
+@include flexelment(column,center,center);
+width:100%;
+outline: solid 1px #ac050b;
+
+}
+.companys-use__texto--parrafo{
+    // text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 0px 20px 0px 20px;
+   
+}
+.slack-concepts{
+@include flexelment(column,space-around,center);
+background-color: #f4ede4;
+}
+.slack-concepts__img{
+    width: 100%;
+    height: auto;
+}
+.slack-concepts__informations{
+    @include flexelment(column,center,stretch);
+    gap: 15px;
+    outline: solid 1px #66b8da;
+}
+.slack-concepts__informations--enlace{
+    font-size: 22px;
+    text-decoration: none;
+}
+.slack-concepts__informations--texto{
+    font-size: 21px;
+}
+.slack-concepts__informations--title{
+    font-size: 22px;
+}
+.slack_img{
+    width: 100%;
+}
+.slack-estadisticas{
+    @include flexelment(column,center,center);
+    text-align: center;
+    margin-left: 15px;
+}
+.slack-estadisticas__title{
+    text-align: center;
+    font-size: 31px;
+}
+.slack-estadisticas__button{
+    background-color: $bg_color_purple;
+    color: white;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+box-shadow: inset 0 0 0 1px $bg_color_purple;
+padding: 20px 40px 20px;
+cursor: pointer;
+// box-sizing: inherit;
+// margin-right: 20px;
+box-sizing: border-box;
+
+}
+.slack-estadisticas__button2{
+padding: 20px;
+border-radius: 4px;
+display: block;
+text-decoration: none;
+width: 100%;
+color: $bg_color_purple;
+box-shadow: inset 0 0 0 1px $bg_color_purple;
+box-sizing: border-box;
+
+}
+.slack-estadisticas__enlaces{
+// box-sizing: inherit;
+width: 100%;
+
+}
+.slack-estadisticas__parrafo{
+    font-size: 20px;
+    font-weight: 400;
+}
+.slack-estadisticas__number{
+@include flexelment (column,center,center); 
+list-style-type: none;
+}
+.estadistica-span{
+    font-size: 50px;
+    font-weight: 900;
+    color: $bg_color_purple;
+}
+.estadistica-parrafo{
+    font-size: 14px;
+    display: block;
+    text-align: center;
+}
+.slack-tmovil__title{
+    font-size: 14px;
+}
+.span-tmovil{
+    font-weight: bold;
+}
+.slack-promotions{
+    @include flexelment (column,center,center);
+    background-color:#f4ede4;
+}
+.slack-promotions__img{
+    @include flexelment (column,center,center);
+    padding: 12px;
+    background-color:#f4ede4;
+
+}
+.slack-promotions__img--logo{
+    padding: 10px;
+    background-color: white;
+}
+.slack-promotions__tittle{
+    background-color:#f4ede4;
+}
+.flecha{
+    width: 30%;
+    background-color: white;
+
+}
+.slack-slash{
+    @include flexelment (row,space-between,center);
+    background-color: white;
+
+    color: blue;
+}
+.span_claro{
+    // font-weight: 300;
+    background-color: white;
+
+    color: gray;
+}
+.slack-sededigital{
+    @include flexelment (column,center,center);
+    // margin-left: 10px;
+// gap: 10px;
+background-color: $bg_color_purple;
+
+}
+.slack-sededigital__body{
+    @include flexelment (column,center,center);
+    gap: 17px;
+    background-color: $bg_color_purple;
+    // margin-left: 10px 10px 10px 10px;
+    padding: 20px;
+
+}
+.slack-sededigital__title{
+font-size: 25px;
+color: white;
+background-color: $bg_color_purple;
+text-align: center;
+margin: 50px 10px 10px 10px;
+
+}
+.slack-sededigital__enlace{
+    width: 100%;
+    display: block;
+    text-decoration: none;
+box-shadow: inset 0 0 0 1px $bg_color_purple;
+padding: 19px 40px 20px;
+display: block;
+text-align: center;
+font-weight: 700;
+letter-spacing: .8px;
+box-sizing: border-box;
+color: $bg_color_purple;
+background-color:white;
+margin:0px 30px 0px 30px;
+
+}
+.slack-sededigital__enlace2{
+    width: 100%;
+    display: block;
+    text-decoration: none;
+box-shadow: inset 0 0 0 3px white;
+padding: 19px 40px 20px;
+display: block;
+text-align: center;
+font-weight: 700;
+letter-spacing: .8px;
+box-sizing: border-box;
+color: white;
+background-color: $bg_color_purple ;
+}
+.nav-footer{
+   display: flex;
+ flex-direction: column;
+}
+.nav-footer__menu{
+    display: flex;
+    flex-direction: column;
+}
+.nav-footer--row{
+    display: flex;
+    flex-direction: column;
+}
+.nav-foter__logo{
+    display: flex;
+    flex-direction: column;
+}
+.slack_img--nav{
+    width: 15%;
+}
+.nav-footer__menu--row{
+    gap: 20px;
+}
+.nav-footer__listen--lv{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    list-style: none;
+    font-weight: 900;
+    font-size: 14px;
+
+}
+.nav-footer__listen--lv2{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    list-style: none;
+
+}
+.slack_download{
+    text-decoration: none;
+    padding: 20px;
+}
+.nav-footer__listen--socialred{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style: none;
+    margin: 15px;
+}
+.img_socialred{
+    width: 25%;
+}
+.footer-span__texto{
+    font-weight: 400;
+    color: #454245;
+    font-size: 12px;
+    text-align: left;
+
+}
+header{
+    position:fixed;
+    width: 100%;
+}
